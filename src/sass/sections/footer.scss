@@ -1,0 +1,92 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.additional-information {
+    padding-top: 5px;
+    width: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer::before {
+    content: '';
+    display: block;
+    width: 1200px;
+    height: 2px;
+    background-color: $lightergray-color;
+}
+
+.site-developer {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $darkgray-color;
+}
+
+.producer-information {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $darkgray-color;
+    width: 295px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.producer-name {
+  &:hover {
+      color: $fuchsia-color;
+  }
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 380px;
+    height: 40px;
+}
+
+.email-form {
+    display: block;
+    width: 230px;
+    height: 40px;
+    border: none;
+    padding-left: 12px;    
+    border: 1px solid  $lightergray-color;
+}
+
+::placeholder {
+    font-family: $secondary-font;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: $white-color;
+}
+
+.email {
+    width: 150px;
+    height: 40px;
+    background-color: $lightgreen-color;
+    border: none;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white-color;
+}
+
+@media (min-resolution: 192dpi) {
+    header {   
+    background-image: url(../images/background-image@2x.png);
+    }
+}
